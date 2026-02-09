@@ -1,1 +1,1 @@
-Nodes enforce memory laws.
+Nodes enforce memory laws and schemas.

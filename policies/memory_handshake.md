@@ -1,1 +1,3 @@
-Defines how models query memory using invariant signatures and return feedback.
+# Memory Handshake Protocol
+
+Models query by invariant signature and return feedback.

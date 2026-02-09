@@ -1,4 +1,5 @@
-TTL defaults by risk tier:
+# TTL Defaults
+
 Tier 0: 1 month
 Tier 1: 3 months
 Tier 2: 6 months

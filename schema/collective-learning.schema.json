@@ -1,11 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Collective Learning Event",
   "type": "object",
-  "required": [
-    "cl_event_id",
-    "meta_hash_id",
-    "learning_type",
-    "contributors",
-    "effect"
-  ]
+  "required": ["cl_event_id","timestamp","meta_hash_id","contributors","learning_type","effect"]
 }

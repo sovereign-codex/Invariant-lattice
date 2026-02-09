@@ -1,16 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Invariant Lattice Meta-Hash",
   "type": "object",
-  "required": [
-    "meta_hash_id",
-    "version",
-    "domain_tags",
-    "invariant_pattern",
-    "confidence",
-    "trust_level",
-    "ttl",
-    "origin",
-    "access_envelope",
-    "metrics"
-  ]
+  "required": ["meta_hash_id","version","domain_tags","invariant_pattern","confidence","trust_level","ttl","origin","access_envelope","metrics"]
 }

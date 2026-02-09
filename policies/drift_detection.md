@@ -1,1 +1,4 @@
-Drift is detected via rising corrections or external contradiction.
+# Drift Detection
+
+Drift triggers revalidation.
+Dogma is failure.

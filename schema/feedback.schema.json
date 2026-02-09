@@ -1,8 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Feedback",
   "type": "object",
-  "required": [
-    "meta_hash_id",
-    "outcome"
-  ]
+  "required": ["meta_hash_id","timestamp","used_by","outcome"]
 }

@@ -1,1 +1,4 @@
-Index, Decay, Consensus, Security.
+Index Steward
+Decay Steward
+Consensus Steward
+Security Steward

@@ -1,14 +1,4 @@
 {
-  "cl_event_id": "CL-\u03a617-001",
-  "meta_hash_id": "\u03a6-17",
-  "learning_type": "corroboration",
-  "contributors": [
-    {
-      "agent_id": "AVOT-Energy",
-      "agent_type": "avot"
-    }
-  ],
-  "effect": {
-    "confidence_delta": 0.04
-  }
+  "cl_event_id": "CL-Φ17-001",
+  "learning_type": "corroboration"
 }

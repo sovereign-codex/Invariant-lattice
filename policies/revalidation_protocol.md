@@ -1,1 +1,3 @@
-Memory must be revalidated on TTL expiry, drift, or conflict.
+# Revalidation Protocol
+
+Triggered by TTL expiry, drift, or conflict.
