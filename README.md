@@ -8,6 +8,6 @@ It forgets without validation.
 It learns collectively.
 It enforces sovereignty.
 
-Truth is provisional.
-Memory is earned.
+Truth is provisional.  
+Memory is earned.  
 Learning is shared.
