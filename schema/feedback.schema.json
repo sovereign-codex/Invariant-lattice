@@ -1,6 +1,45 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Feedback",
+  "title": "Meta-Hash Feedback Event",
+  "description": "Post-recall feedback used for decay, drift detection, and refinement.",
   "type": "object",
-  "required": ["meta_hash_id","timestamp","used_by","outcome"]
+  "required": [
+    "meta_hash_id",
+    "timestamp",
+    "used_by",
+    "outcome"
+  ],
+  "properties": {
+    "meta_hash_id": { "type": "string" },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "used_by": {
+      "type": "string",
+      "description": "Model, AVOT, or system identifier"
+    },
+    "context_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "outcome": {
+      "type": "object",
+      "required": [
+        "helpful",
+        "correction_needed",
+        "drift_detected"
+      ],
+      "properties": {
+        "helpful": { "type": "boolean" },
+        "correction_needed": { "type": "boolean" },
+        "drift_detected": { "type": "boolean" },
+        "notes": { "type": "string" }
+      }
+    },
+    "proposed_patch": {
+      "type": "object",
+      "description": "Optional suggested updates"
+    }
+  }
 }
