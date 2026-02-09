@@ -1,4 +1,15 @@
 {
   "cl_event_id": "CL-Φ17-002",
-  "learning_type": "boundary_clarification"
+  "timestamp": "2026-02-06T09:55:00Z",
+  "meta_hash_id": "Φ-17",
+  "contributors": [
+    { "agent_id": "AVOT-Fabricator", "agent_type": "avot" },
+    { "agent_id": "Model-Large-Frontier", "agent_type": "model" }
+  ],
+  "learning_type": "boundary_clarification",
+  "effect": {
+    "added_boundary": "Systems with delayed feedback > 3 cycles",
+    "notes": "Observed instability when feedback latency exceeded threshold."
+  },
+  "applied": true
 }
