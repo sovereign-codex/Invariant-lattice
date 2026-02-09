@@ -1,6 +1,25 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Claim",
+  "description": "An atomic assertion made by a Meta-Hash.",
   "type": "object",
-  "required": ["claim_id","statement","status","linked_evidence"]
+  "required": [
+    "claim_id",
+    "statement",
+    "status",
+    "linked_evidence"
+  ],
+  "properties": {
+    "claim_id": { "type": "string" },
+    "statement": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["hypothesis", "supported", "contested", "deprecated"]
+    },
+    "linked_evidence": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" }
+  }
 }
