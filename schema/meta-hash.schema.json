@@ -1,6 +1,118 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Invariant Lattice Meta-Hash",
+  "description": "A compressed, decaying, consensus-weighted invariant pattern governed by the Memory Laws.",
   "type": "object",
-  "required": ["meta_hash_id","version","domain_tags","invariant_pattern","confidence","trust_level","ttl","origin","access_envelope","metrics"]
+  "required": [
+    "meta_hash_id",
+    "version",
+    "domain_tags",
+    "invariant_pattern",
+    "confidence",
+    "trust_level",
+    "ttl",
+    "origin",
+    "access_envelope",
+    "expansion_vectors",
+    "constraints",
+    "metrics"
+  ],
+  "properties": {
+    "meta_hash_id": {
+      "type": "string",
+      "description": "Deterministic identifier for the invariant pattern"
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of the meta-hash"
+    },
+    "domain_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "invariant_pattern": {
+      "type": "string",
+      "description": "Minimal structural rule that survives paraphrase"
+    },
+    "boundary_conditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "trust_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "ttl": {
+      "type": "string",
+      "description": "Validity window (e.g. 1mo, 6mo, 1y, expired)"
+    },
+    "origin": {
+      "type": "object",
+      "required": ["avots", "first_observed"],
+      "properties": {
+        "avots": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "first_observed": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "access_envelope": {
+      "$ref": "./access-envelope.schema.json"
+    },
+    "expansion_vectors": {
+      "type": "object",
+      "required": ["minimal"],
+      "properties": {
+        "minimal": { "type": "string" },
+        "applied": { "type": "string" },
+        "explanatory": { "type": "string" },
+        "speculative": { "type": "string" }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "ethical": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "contextual": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "recall_count",
+        "successful_uses",
+        "corrections",
+        "last_validated"
+      ],
+      "properties": {
+        "recall_count": { "type": "integer" },
+        "successful_uses": { "type": "integer" },
+        "corrections": { "type": "integer" },
+        "last_validated": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
 }
