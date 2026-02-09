@@ -1,6 +1,39 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Evidence",
+  "description": "Supporting artifact for a claim or Meta-Hash.",
   "type": "object",
-  "required": ["evidence_id","type","source","reference"]
+  "required": [
+    "evidence_id",
+    "type",
+    "source",
+    "reference"
+  ],
+  "properties": {
+    "evidence_id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "simulation",
+        "experiment",
+        "analysis",
+        "doc",
+        "issue",
+        "pull_request",
+        "commit",
+        "log",
+        "external"
+      ]
+    },
+    "source": { "type": "string" },
+    "reference": {
+      "type": "string",
+      "description": "Repo path, issue/PR ref, or external citation pointer"
+    },
+    "notes": { "type": "string" },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
 }
