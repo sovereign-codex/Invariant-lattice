@@ -10,11 +10,11 @@ Instead of increasing model size, the lattice:
 - records learning itself as a first-class artifact.
 
 ## Memory Laws
-I. Amortized Intelligence
-II. Decay & Revalidation
-III. Distributed Consensus
-IV. Sovereignty & Access
-V. Collective Learning
+I. Amortized Intelligence  
+II. Decay & Revalidation  
+III. Distributed Consensus  
+IV. Sovereignty & Access  
+V. Collective Learning  
 
 This repository is not a database of facts.
 It is a living memory economy.
