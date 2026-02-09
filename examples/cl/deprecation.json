@@ -1,4 +1,17 @@
 {
   "cl_event_id": "CL-Δ09-004",
-  "learning_type": "deprecation_signal"
+  "timestamp": "2025-03-01T12:30:00Z",
+  "meta_hash_id": "Δ-09",
+  "contributors": [
+    { "agent_id": "AVOT-Fabricator", "agent_type": "avot" },
+    { "agent_id": "Model-Small-13B", "agent_type": "model" },
+    { "agent_id": "Model-Large-Frontier", "agent_type": "model" }
+  ],
+  "learning_type": "deprecation_signal",
+  "effect": {
+    "confidence_delta": -0.25,
+    "trust_level_delta": -1,
+    "notes": "Repeated correction signals across scaling regimes."
+  },
+  "applied": true
 }
