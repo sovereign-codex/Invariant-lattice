@@ -1,1 +1,0 @@
-Memory handshake protocol.
