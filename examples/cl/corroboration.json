@@ -1,4 +1,15 @@
 {
   "cl_event_id": "CL-Φ17-001",
-  "learning_type": "corroboration"
+  "timestamp": "2026-02-04T18:20:00Z",
+  "meta_hash_id": "Φ-17",
+  "contributors": [
+    { "agent_id": "AVOT-Energy", "agent_type": "avot" },
+    { "agent_id": "Model-Small-07B", "agent_type": "model" }
+  ],
+  "learning_type": "corroboration",
+  "effect": {
+    "confidence_delta": 0.04,
+    "notes": "Independent validation across simulation and explanation contexts."
+  },
+  "applied": true
 }
