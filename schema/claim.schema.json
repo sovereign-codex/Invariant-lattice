@@ -1,3 +1,9 @@
 {
-  "title": "Claim"
+  "title": "Claim",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "statement",
+    "status"
+  ]
 }

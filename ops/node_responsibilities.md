@@ -1,1 +1,1 @@
-Node responsibilities.
+Nodes enforce memory laws.

@@ -1,3 +1,10 @@
 {
-  "title": "Access Envelope"
+  "title": "Access Envelope",
+  "type": "object",
+  "required": [
+    "visibility",
+    "recall_rights",
+    "write_rights",
+    "export_rights"
+  ]
 }

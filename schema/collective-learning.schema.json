@@ -1,3 +1,11 @@
 {
-  "title": "Collective Learning"
+  "title": "Collective Learning Event",
+  "type": "object",
+  "required": [
+    "cl_event_id",
+    "meta_hash_id",
+    "learning_type",
+    "contributors",
+    "effect"
+  ]
 }

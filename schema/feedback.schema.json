@@ -1,3 +1,8 @@
 {
-  "title": "Feedback"
+  "title": "Feedback",
+  "type": "object",
+  "required": [
+    "meta_hash_id",
+    "outcome"
+  ]
 }

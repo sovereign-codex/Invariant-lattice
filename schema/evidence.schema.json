@@ -1,3 +1,9 @@
 {
-  "title": "Evidence"
+  "title": "Evidence",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "type",
+    "reference"
+  ]
 }

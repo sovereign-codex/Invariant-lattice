@@ -1,3 +1,12 @@
 {
-  "meta_hash_id": "\u03a6-17"
+  "meta_hash_id": "\u03a6-17",
+  "version": "1.2.0",
+  "domain_tags": [
+    "systems",
+    "coherence"
+  ],
+  "invariant_pattern": "Closed coherent loops self-stabilize.",
+  "confidence": 0.82,
+  "trust_level": 2,
+  "ttl": "6mo"
 }
